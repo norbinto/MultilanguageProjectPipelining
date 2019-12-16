@@ -10,12 +10,12 @@
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.9.10" />
   </ItemGroup>
   
-  <!--<Target Name="CopyToPublishFolder" AfterTargets="Build">
+  <Target Name="CopyToPublishFolder" AfterTargets="Build">
     <ItemGroup>
       <PythonFiles Include="..\MultilanguageProjectPipelining.Python\**\*.*" />
     </ItemGroup>
     <Copy SourceFiles="@(PythonFiles)" DestinationFiles="@(PythonFiles->'MultilanguageProjectPipelining.Python\%(RecursiveDir)%(Filename)%(Extension)')" />
     <Copy SourceFiles="@(PythonFiles)" DestinationFiles="@(PythonFiles->'$(PublishUrl)\MultilanguageProjectPipelining.Python\%(RecursiveDir)%(Filename)%(Extension)')" />
-  </Target>-->
+  </Target>
 
 </Project>
